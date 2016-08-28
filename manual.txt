@@ -22,3 +22,4 @@ git commit-m "[commit message]"
 
 git pull
 git push
+git push --set-upstream https://github.com/garynrrs/manual master
