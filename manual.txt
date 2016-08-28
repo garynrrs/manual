@@ -1,0 +1,24 @@
+GIT MANUAL
+As I learn to use git I will note the most important commands here, with my own comments where necessary.
+
+git init		make a folder a repository
+git init [repository]	create a folder as a repository
+git clone		clone a repository and create a local folder of that name
+
+git status
+
+git branch	list branches
+
+git checkout [branchname]	start working in the branch
+
+git diff	show difference between files
+
+git add [file name]	add file to staging area
+git add .		add all unstaged files to staging area
+git add -A		add all unstaged files to staging area
+
+git commit
+git commit-m "[commit message]"
+
+git pull
+git push
