@@ -3,13 +3,17 @@ As I learn to use git I will note the most important commands here, with my own 
 
 git init		make a folder a repository
 git init [repository]	create a folder as a repository
-git clone		clone a repository and create a local folder of that name
+git clone URL		clone a repository and create a local folder of that name
+			also does a git remote add origin https://url/repository.git in the background
 
 git status
 
-git branch	list branches
+git branch			list branches
+git branch dev			create dev branch
+git branch -D dev		delete permanently dev branch
 
 git checkout [branchname]	start working in the branch
+git checkout -b dev		create branch dev and check it out
 
 git diff	show difference between files
 
@@ -20,6 +24,15 @@ git add -A		add all unstaged files to staging area
 git commit
 git commit-m "[commit message]"
 
-git pull
+git pull		combines git fetch and git merge
 git push
+
+git remote add origin https://url/repository.git	adds remote repository called origin
+git remote						show remote branches
+git push -u origin master	first time only use -u, push and merge master with remote origin, allows tracking of remote repository, visible in git status etc
+
 git push --set-upstream https://github.com/garynrrs/manual master
+
+git fetch		pulls down remote repository branches and makes local branches with them
+
+git pull origin master		pull remote origin and merge into local master branch
