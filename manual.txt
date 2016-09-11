@@ -24,12 +24,12 @@ git add -A		add all unstaged files to staging area
 git commit
 git commit-m "[commit message]"
 
-git pull		combines git fetch and git merge
-git push
-
 git remote add origin https://url/repository.git	adds remote repository called origin
 git remote						show remote branches
-git push -u origin master	first time only use -u, push and merge master with remote origin, allows tracking of remote repository, visible in git status etc
+git push -u origin master	first time only use -u, push and merge master with remote origin, 
+git push
+git pull		combines git fetch and git merge
+allows tracking of remote repository, visible in git status etc
 
 git push --set-upstream https://github.com/garynrrs/manual master
 
