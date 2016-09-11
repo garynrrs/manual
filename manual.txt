@@ -37,4 +37,4 @@ git fetch		pulls down remote repository branches and makes local branches with t
 
 git pull origin master		pull remote origin and merge into local master branch
 
-test
+dev branch test
